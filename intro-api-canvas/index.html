@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a la Graficación 2D</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .qr-container {
+            margin-top: 20px;
+            border: 1px solid #f3eded;
+            padding: 10px;
+            text-align: center;
+        }
+        .outer-container {
+            background-color: #80cde7; /* Light blue for the outer container */
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .big-container {
+            width: 660px; /* Adjusted size for proper alignment */
+            background-color: rgb(71, 68, 71); /* Background color */
+            padding: 20px; /* Padding inside */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .canvas-container {
+            width: 150px;
+            height: 150px; /* Adjusted height to include the top bar */
+            margin: 10px;
+            background-color: rgb(44, 139, 143); /* Background for each canvas container */
+            position: relative;
+        }
+        .bar {
+            height: 20px;
+            background-color: rgb(39, 234, 248); /* Green top bar */
+            width: 100%;
+        }
+        canvas {
+            width: 150px;
+            height: 150px;
+            display: block; /* Ensures canvas has no extra space around */
+        }
+        .title-container {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px; /* Space between the title and the canvas */
+        }
+        .title-subcontainer-gray {
+            flex-grow: 1;
+            background-color: gray;
+            padding: 10px;
+        }
+        .title-subcontainer-green {
+            flex-grow: 2;
+            background-color: rgb(21, 127, 226);
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+        .credit-container {
+            background-color: #33beec; /* Light blue */
+            padding: 10px;
+            margin-top: 20px; /* Space between title and credits */
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <main class="container mt-3 d-flex justify-content-center">
+        <div class="outer-container">
+            <div class="title-container shadow p-3 mb-5 bg-body rounded">
+                <div class="title-subcontainer-gray"></div>
+                <div class="title-subcontainer-green"><h1>Ejemplos de objetos en 2D</h1></div>
+                <div class="title-subcontainer-gray"></div>
+            </div>
+            <div class="big-container">
+                <!-- Six containers, each with a canvas and a top bar -->
+                <div class="canvas-container"><div class="bar"></div><canvas id="canvas1"></canvas></div>
+                <div class="canvas-container"><div class="bar"></div><canvas id="canvas2"></canvas></div>
+                <div class="canvas-container"><div class="bar"></div><canvas id="canvas3"></canvas></div>
+                <div class="canvas-container"><div class="bar"></div><canvas id="canvas4"></canvas></div>
+                <div class="canvas-container"><div class="bar"></div><canvas id="canvas5"></canvas></div>
+                <div class="canvas-container"><div class="bar"></div><canvas id="canvas6"></canvas></div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+
+<footer class="footer mt-auto py-3 bg-dark text-white">
+    <div class="container text-center">
+        <p>Jasmin Viveros Gomez &copy; 2024</p>
+    </div>
+</footer>
+
+
+</body>
+</html>
